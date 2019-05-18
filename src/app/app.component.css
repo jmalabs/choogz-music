@@ -1,0 +1,58 @@
+mat-sidenav {
+  height: 100%;
+  width: 250px;
+  background-color: #3f51b5;
+  margin-top: 4rem;
+
+}
+
+mat-sidenav a {
+  color: white;
+}
+
+mat-sidenav-container {
+  height: 100%;
+
+}
+
+ul>li {
+  /* text-decoration: none; */
+  display: inline-block;
+  margin: 0 1rem;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+
+}
+
+.mat-elevation-z6 {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+mat-toolbar {
+  height: 64px;
+  position: fixed;
+  z-index: 100;
+  width: 100% !important;
+}
+
+.app {
+  position: relative;
+}
+
+mat-sidenav-content {
+  margin-top: 6rem;
+}
+
+main{
+  height: 100vh;
+  margin: 0 3rem;
+}

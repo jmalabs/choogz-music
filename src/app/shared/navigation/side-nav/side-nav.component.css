@@ -1,0 +1,36 @@
+mat-sidenav {
+  height: 100%;
+  width: 250px;
+  background-color: #3f51b5;
+  margin-top: 4rem;
+
+}
+
+mat-sidenav-container {
+  height: 100%;
+
+}
+
+ul>li {
+  /* text-decoration: none; */
+  display: inline-block;
+  margin: 0 1rem;
+
+}
+
+mat-nav-list>a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+
+}
+
+
+
+mat-sidenav-content {
+  margin-top: 6rem;
+}

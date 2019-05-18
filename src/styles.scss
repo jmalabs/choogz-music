@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$md-mcgpalette0: (
+    50 : #e2e2e2,
+    100 : #b6b6b6,
+    200 : #858585,
+    300 : #545454,
+    400 : #2f2f30,
+    500 : #0a0a0b,
+    600 : #09090a,
+    700 : #070708,
+    800 : #050506,
+    900 : #030303,
+    A100 : #a6a6a6,
+    A200 : #8c8c8c,
+    A400 : #737373,
+    A700 : #666666,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+
+
+
+
+$custom-theme-primary: mat-palette($md-mcgpalette0, 900);
+$custom-theme-accent:mat-palette($md-mcgpalette0, A200, A100, A400);
+$custom-theme-warn: mat-palette($mat-red);
+$custom-theme: mat-dark-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+@include angular-material-theme($custom-theme);
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}

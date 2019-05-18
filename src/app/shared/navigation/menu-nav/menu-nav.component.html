@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)=menuIconClicked()>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div class="logo">
+    <a [routerLink]="['/']" routerLinkActive="router-link-active">
+      <div fxLayout="column" fxLayoutAlign="center center">
+      <span class="brand">{{appName}}</span>
+      <span class="sub-brand">{{subAppName}}</span>
+    </div>
+    </a>
+  </div>
+  <!-- <div fxFlex fxHide.xs>
+    <ul fxLayout="row" fxLayoutAlign="flex-end">
+      <li><a [routerLink]="['/signup']">Signup</a></li>
+      <li><a [routerLink]="['/login']">Login</a></li>
+      <li><a [routerLink]="['/training']">Training</a></li>
+    </ul>
+  </div> -->
+</mat-toolbar>

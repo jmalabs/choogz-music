@@ -1,0 +1,14 @@
+button {
+  margin: 1rem;
+}
+
+mat-form-field,
+button {
+  width: 25%;
+}
+
+.agree {
+  width: 25%;
+  font-size: .75rem;
+  color: rgba(0, 0, 0, .54);
+}
