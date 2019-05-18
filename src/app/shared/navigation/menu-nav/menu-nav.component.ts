@@ -11,8 +11,8 @@ export class MenuNavComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
   constructor() {
 
-    this.appName = 'GIT';
-    this.subAppName = 'profile viewer';
+    this.appName = 'CHOOGZ';
+    this.subAppName = 'music';
    }
 
   ngOnInit() { }

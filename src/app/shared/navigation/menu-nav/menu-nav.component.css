@@ -57,11 +57,15 @@ mat-sidenav {
   }
 
   .brand {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: italic;
     font-weight: bolder;
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-top: 1.5rem;
   }
   .sub-brand {
     font-size: 1.3rem;
     font-style: italic;
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-bottom: 1rem;
   }
