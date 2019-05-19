@@ -1,6 +1,6 @@
 <div class="container">
 
-  <form action="" fxLayout="row wrap" fxLayoutAlign="center start" class="artis-search-form">
+  <form action="" fxLayout="row wrap" fxLayoutAlign="center start" class="artist-search-form">
     <div fxLayout="row" fxLayoutAlign="center start" fxFlex="100">
       <mat-form-field appearance="legacy" fxFlex="70">
         <mat-label>Artist Name</mat-label>
@@ -19,7 +19,7 @@
     <mat-card *ngFor="let artist of artists" class="artist-result">
       <div fxLayout="row" fxLayoutAlign="start center">
         <img [src]="artist.picture_small">
-        <span class="artist-name">{{artist.name}}</span>
+        <span class="artist-name"><a>{{artist.name}}</a></span>
       </div>
       <div>
         <mat-chip-list class="badge">
