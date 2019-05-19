@@ -9,12 +9,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProfileService {
 
-    constructor( private http: HttpClient) {
+    // constructor( private http: HttpClient) {
 
-    }
+    // }
 
-    getUserProfile(userName: string): Observable<any> {
-        return this.http.get(`http://api.github.com/users/${userName}?client_id=${CONFIG.clientId}&client_secret=${CONFIG.clientId}`);
-    }
+    // getUserProfile(userName: string): Observable<any> {
+    //     return this.http.get(`http://api.github.com/users/${userName}?client_id=${CONFIG.clientId}&client_secret=${CONFIG.clientId}`);
+    // }
 
 }
