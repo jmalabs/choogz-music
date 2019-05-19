@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: ':search:token', component: SearchComponent
+    path: '', component: SearchComponent
   }
 
 
