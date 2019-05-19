@@ -7,3 +7,16 @@
 .artist-search-form{
     margin: 2rem 0;
 }
+
+.artist-name{
+    margin: 0 1rem;
+}
+
+.artist-badge{
+    margin-right: .8rem;
+    margin-top: .8rem;
+}
+
+.badge .artist-badge{
+    margin-top: 2rem;
+}

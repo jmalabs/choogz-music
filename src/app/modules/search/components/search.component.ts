@@ -33,15 +33,19 @@ export class SearchComponent implements OnInit {
     this.musicService
       .searchArtist(this.searchParam, this.token)
       .subscribe(res => {
-        if (res && res.message.header.status_code === 200) {
-          res.message.body.artist_list.forEach(element => {
-            this.artists.push({
-              artist_id: element.artist.artist_id,
-              artist_name: element.artist.artist_name,
-              artist_twitter_url: element.artist.artist_twitter_url
-            });
-          });
-        }
+
+        console.log(res);
+        this.artists = res.data;
+
+        // if (res && res.message.header.status_code === 200) {
+        //   res.message.body.artist_list.forEach(element => {
+        //     this.artists.push({
+        //       artist_id: element.artist.artist_id,
+        //       artist_name: element.artist.artist_name,
+        //       artist_twitter_url: element.artist.artist_twitter_url
+        //     });
+        //   });
+        // }
 
       });
   }

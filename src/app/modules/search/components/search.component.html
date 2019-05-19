@@ -16,6 +16,26 @@
   </form>
 
   <div *ngIf="artists" class="artist-results">
-    <mat-card *ngFor="let artist of artists" class="artist-result">{{artist.artist_name}}</mat-card>
+    <mat-card *ngFor="let artist of artists" class="artist-result">
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <img [src]="artist.picture_small">
+        <span class="artist-name">{{artist.name}}</span>
+      </div>
+      <div>
+        <mat-chip-list class="badge">
+          <mat-chip class="artist-badge" color="warn">No. of albums: {{artist.nb_album}}</mat-chip>
+          <mat-chip class="artist-badge" color="warn">No. of fans: {{artist.nb_fan}}</mat-chip>
+        </mat-chip-list>
+
+        <!-- <p class="artist-badge">
+          <mat-icon [matBadge]="artist.nb_album" matBadgeColor="warn" matTooltip="No. of albums: {{artist.nb_album}}">
+            album</mat-icon>
+        </p>
+        <p class="artist-badge">
+          <mat-icon [matBadge]="artist.nb_fan" matBadgeColor="warn" matTooltip="No. of fans: {{artist.nb_fan}}">people
+          </mat-icon>
+        </p> -->
+      </div>
+    </mat-card>
   </div>
 </div>
