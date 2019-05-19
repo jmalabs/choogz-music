@@ -21,3 +21,7 @@
 .badge .artist-badge{
     margin-top: 2rem;
 }
+
+h1, h3, h4 {
+    font-family: 'Handlee', cursive;
+}
